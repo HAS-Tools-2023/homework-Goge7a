@@ -3,3 +3,7 @@ I used the most recent information on the page that was accessible which the wee
 This gave me an estimate of 157.9914 cfs. I did the same technique for the following week except there slightly less data to go off
 of since it takes place in the future and I think using this weeks' current data as a duplication would make my average slightly less accurate.
 I got an average cfs of 169.6256. 
+
+
+### Grade: 
+3/3 Great job!  I got your submission.  Just a note for next time please include a header with your name the date and the assignment number
