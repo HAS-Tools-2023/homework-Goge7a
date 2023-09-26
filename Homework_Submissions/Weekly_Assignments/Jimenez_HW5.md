@@ -1,0 +1,4 @@
+Robert Jimenez HW5 9/26/23
+This week I just guessed on my forecast. 
+../../Homework_Working/Homework_5.py
+I have been struggling with the course so I decided that this week I would focus on the coding portion and how to submite the homework properly. I hope that do more for loops and I am nervous at how confusing pandas will be. Honestly, if I did not go to office hours I would not have been able to complete the assignment. I do not remember covering np.repeat in class and also just the structure and syntax can be really confusing. At least, I learned how to use the shift+enter commands to see if certain lines of code work or what they do. 
