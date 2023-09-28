@@ -1,4 +1,12 @@
-Robert Jimenez HW3 9/26/23
+Robert Jimenez 
+HW3 
+9/26/23
+
+## Grade
+3/3: Nice job!
+Next time please try to add some markdown formatting to make your file easier to read. I can show you this in office hours if you want. 
+##
+
 1. Describe the variables `flow`, `year`, `month`, and `day`. What type of objects are they? What data types are they composed of? How long are they? 
    1. The objects are lists. The length is 12668 for each one. 
 2. How many times was the daily flow greater than your prediction in the month of September (express your answer in terms of the total number of times and as a percentage)?
