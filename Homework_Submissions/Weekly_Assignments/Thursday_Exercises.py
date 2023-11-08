@@ -15,7 +15,7 @@ from matplotlib.dates import DateFormatter
 daymet_df = pd.read_csv('daymet.csv', names=['agency_cd', 'site_no',
                             'datetime', 'flow', 'code'],
                             parse_dates=['datetime'])
-# I just used the daymet_info function to see if it worked. 
+
 
 #%%
 # Exercise 2: 
