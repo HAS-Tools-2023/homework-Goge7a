@@ -1,3 +1,4 @@
+Code for function of timeseries
 # %%
 
 # Import the modules we will use
@@ -22,6 +23,7 @@ data=pd.read_table(filepath, sep = '\t', skiprows=31,
         names=['agency_cd', 'site_no', 'datetime', 'flow', 'code'], 
         parse_dates=['datetime'])
 
+# %%
 
 # %%
 # Read in the datetime for the dataframe
@@ -36,4 +38,3 @@ def monthly_median(dataframe, month, year=2023):
 # %%
 # Value for the median of a given month and year
 monthly_median(datai, 10, 2023)
-# %%

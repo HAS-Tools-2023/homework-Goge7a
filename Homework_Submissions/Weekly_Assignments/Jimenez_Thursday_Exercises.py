@@ -32,11 +32,29 @@ ax=daymet_df.plot.scatter(x='dayl (s)', y='tmax (deg c)',
 colormap ='jet', marker = 'x')
 ax.set_title("day vs temperature")
 
+#%%
 #2.4 Make a plot with lines for the monthly average of `tmax` for all months after Jan 2015.  
 #Add shading to the plot extending to the monthly minimum and maximum of `tmax` for the same period.
 
 # I tried to use the tips you gave and I couldn't get it
 
+# This is the copied code from  the solutions. Ask about what ('M') means.
+mean_val = daymet_df.resample('M').mean()['tmax (deg c)']
+min_val = daymet_df.resample('M').min()['tmax (deg c)']
+max_val = daymet_df.resample('M').max()['tmax (deg c)']
+
+mean_val_plot = mean_val[mean_val.index.year>=2015]
+min_val_plot = min_val[min_val.index.year>=2015]
+max_val_plot = max_val[max_val.index.year>=2015]
+
+ax=plt.axes()
+plt.plot(mean_val_plot, 'o-', color='blue', label='Mean')
+plt.fill_between(max_val_plot.index, min_val_plot.values, max_val_plot.values, color='grey',  alpha=0.2, label='Max-Min')
+ax.set_xlabel("Date")
+ax.set_ylabel("Monthly Maximum daily temperature")
+ax.legend()
 
 #Hint - Use the pandas resample function for datetime objects and the plt.fill type for the shading. 
+
+
 # %%

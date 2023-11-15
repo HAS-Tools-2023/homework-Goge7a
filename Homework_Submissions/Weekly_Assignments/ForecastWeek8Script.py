@@ -12,17 +12,8 @@ filepath = os.path.join('data', filename)
 print(os.getcwd())
 print(filepath)
 
-filepath = 'C:/HAS501/forecasting_h/data/steamflow_week_8.txt'
-# %%
-# %%
-# ** MODIFY **
-# Set the file name and path to where you have stored the data
-filename = 'streamflow_week_6.txt'
-filepath = os.path.join('data', filename)
-print(os.getcwd())
-print(filepath)
+filepath = 'C:\HAS501\homework-Goge7a_H\data\streamflow_week_8.txt'
 
-filepath = 'C:/HAS501/forecasting_h/data/steamflow_week_6.txt'
 # %%
 data=pd.read_table(filepath, sep = '\t', skiprows=31,
         names=['agency_cd', 'site_no', 'datetime', 'flow', 'code']
@@ -40,12 +31,14 @@ mybins = np.linspace(0, (np.mean(oct_flow["flow"])), num=15)
 plt.hist((oct_flow["flow"]), bins=mybins)
 plt.title('Streamflow')
 plt.ylabel('Count')
-plt.xlabel("flow")
+plt.xlabel("mean flow")
 # %%
 ## Plot 2: Scatter
-oct_flow2=data[(data['month']==10) & (data['year'] >= 2010)].mean()
-oct_flow.plot(x='datetime', y='flow')
+
+oct_flow2 = data[(data['month'] == 10) & (data['year'] >= 2010)].groupby('datetime')['flow'].mean()
+
+oct_flow2.plot(x='datetime', y='flow')
 plt.xlabel('datetime')
-plt.ylabel('flow')
+plt.ylabel('mean flow')
 plt.title('hydrograph')
 # %%

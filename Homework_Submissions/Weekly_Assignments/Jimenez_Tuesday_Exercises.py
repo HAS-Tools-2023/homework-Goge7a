@@ -34,6 +34,7 @@ iris_df = pd.read_csv("iris_df.csv" ,  index_col ='species')
 # %%
 # 1. How do you view the "unique" species in the `iris_df` index?
 unique = np.unique(iris_df.index)
+print(unique)
 # %%
 # 2. How do you "locate" only rows for the `versicolor` species?
 iris_df.loc['versicolor']
