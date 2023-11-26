@@ -8,6 +8,9 @@ import matplotlib.pyplot as plt
 import datetime
 from matplotlib.dates import DateFormatter
 #%%
+
+## Grade
+## 8/10 - here too your choice of putting this as comments in a python script is really limiting your ability to make it readable. Most of your answers are correct but several of them are missing major points and need to be expanded. 
 #### Numpy: 
 #  - The general purpose of the numpy library : 
 #       numpy has a database that can perform functions such as finding the mean or average of data

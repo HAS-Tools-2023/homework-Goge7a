@@ -1,3 +1,8 @@
+### Grade
+4/9 -- I'm not sure what to do with this exactly. It looks like you have copied part of your python scrip into your markdown file. The assignment was to submit your script as a python script so that I can try to run it and to provide a markdown file with some reflections on questions I provided. I don't see any of the answers to the reflection questions here.  I didn't try to run your code since its not a python script but looking it over it looks like your relative paths would be broken from this directory. What I see included here like its the start of your forecast but its not meeting the requirements listed for your graded script (i.e. printing out your forecast values and providing plots). I am glad you were able to create a function though that looks great!
+
+###
+
 Code for function of timeseries
 # %%
 
@@ -35,6 +40,7 @@ def monthly_median(dataframe, month, year=2023):
     median_val=np.median(monthly_vals['flow'])
     print('calculating median for month:', month, 'year', year)
     return(median_val)
+
 # %%
 # Value for the median of a given month and year
 monthly_median(datai, 10, 2023)

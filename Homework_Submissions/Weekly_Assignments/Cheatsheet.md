@@ -1,3 +1,6 @@
+### Grade
+8/10 -- Mostly your answers are correct but some of them are not quite right (2-4). Also you have zero formatting on this so its very hard to read. At a minimum you need to have some formatting to make it easy to follow. 
+
 1. What is Github and what is Git (and how are they different)
 Git is a folder that tracks changes  
 Github uses the code from Git which can be distributed as repositories. 
