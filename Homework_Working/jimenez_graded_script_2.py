@@ -14,7 +14,6 @@ forecast_date_input = input("Enter the forecast date (YYYY-MM-DD): ")
 forecast_date = datetime.datetime.strptime(forecast_date_input, "%Y-%m-%d").date()
 #%%
 # Access USGS 
-# Originally ChatGPT used an 'f' in front of the https portion. I changed it back to the way we did it in class using plus signs, since 'f' did not make sense to me. 
 def get_usgs_data(site_code, start_date, end_date):
     """
     Retrieves USGS streamflow data for a specified time period.
@@ -46,7 +45,6 @@ def get_usgs_data(site_code, start_date, end_date):
     return df
 # %%
 # Forecast Prediction
-# The docstring did not quite make sense to me so I used ChatGPT to help me write it.
 def plot_streamflow(data, forecast_date):
     """
     Plots the streamflow data and predicts streamflow for the next week and the following week.
@@ -70,7 +68,6 @@ def plot_streamflow(data, forecast_date):
     predicted_next_week = median_flow.get(day_of_year, np.nan)
     predicted_following_week = median_flow.get((day_of_year + 7) % 365, np.nan)
     
-    # I was trying to use a numpy function to help me with line and could not figure it out so ChatGPT used this for the lines of code to get it to work. 
     print(f"Predicted Streamflow for Next Week: {predicted_next_week} cfs")
     print(f"Predicted Streamflow for Following Week: {predicted_following_week} cfs")
 #%%
@@ -83,7 +80,6 @@ def plot_streamflow(data, forecast_date):
     plt.show()
 
 # Specify the week for the forecast. 
-# I wanted to graph to look nice. I was not sure how to structure this at first since I wanted to use < , > but doing it this way really helped me get the graph that I wanted to get. 
 forecast_start_date = forecast_date
 forecast_end_date = forecast_start_date + pd.DateOffset(days=13)  # Next week and following week
 
